@@ -1,0 +1,11 @@
+vulnerability_sources:
+  leakix:
+    api_key: xxxxx
+    exclude_plugins:
+      - WpUserEnumHttp
+      - ConfigJsonHttp
+
+program_sources:
+  h1:
+    username: username
+    api_key: xxxxxxx
