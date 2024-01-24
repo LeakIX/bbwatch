@@ -68,6 +68,7 @@ func (ls *HackerOneSource) GetPrograms(bountyOnly bool) chan Program {
 			}
 
 			for _, program := range programsResp.Data {
+				log.Println(bountyOnly)
 				if bountyOnly && !program.Attributes.OffersBounties {
 					continue
 				}

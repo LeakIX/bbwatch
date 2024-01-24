@@ -1,3 +1,4 @@
+bounty_only: false
 vulnerability_sources:
   leakix:
     api_key: xxxxx

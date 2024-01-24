@@ -42,7 +42,7 @@ func (bbw *BBWatcher) LoadConfig() {
 
 func (bbw *BBWatcher) Start() {
 	for _, progSource := range bbw.ProgramSources {
-		for program := range progSource.GetPrograms(true) {
+		for program := range progSource.GetPrograms(bbw.Config.BountyOnly) {
 			if len(program.Assets) < 1 {
 				continue
 			}
