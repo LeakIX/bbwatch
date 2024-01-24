@@ -76,7 +76,6 @@ func (ls *HackerOneSource) GetPrograms(bountyOnly bool) chan Program {
 					Platform: ls.GetName(),
 					Reward:   program.Attributes.OffersBounties,
 				}
-				log.Printf("Loading scopes for program %s", program.Attributes.Handle)
 				programScope, err := ls.GetProgram(program)
 				if err != nil {
 					log.Println(err)
